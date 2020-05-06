@@ -1,0 +1,23 @@
+{
+  "name": "hajusuk",
+  "version": "1.0.0",
+  "description": "KBO Stat Scrapper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaw187/hajusuk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jaw187/hajusuk/issues"
+  },
+  "homepage": "https://github.com/jaw187/hajusuk#readme",
+  "dependencies": {
+    "x-ray": "^2.3.4"
+  }
+}
