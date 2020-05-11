@@ -1,5 +1,7 @@
 # app specific
 players.json
+hitters.csv
+pitchers.csv
 
 # Logs
 logs

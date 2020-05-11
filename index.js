@@ -86,7 +86,7 @@ const convertHittingStats = (stats) => {
         result.ISO = result.SLG - result.BA;
 
         const constants = Constants[result.Year];
-        result.wOBA = (
+        result.wOBA = constants && (
             constants.wBB * (result.BB - result.IBB) +
             constants.wHBP * result.HBP +
             constants.w1B * (result.H - result['2B'] - result['3B'] - result.HR) +
@@ -256,8 +256,9 @@ const getTeamUrls = (callback) => {
 
         Async.mapLimit(teams, 3, (team, done) => {
 
-            log('getting', team);
-            getPlayerUrls(team, done);
+            const url = `${team}/roster`;
+            log('getting', url);
+            getPlayerUrls(url, done);
         }, callback);
     });
 };
